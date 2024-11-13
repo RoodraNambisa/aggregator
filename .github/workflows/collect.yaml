@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 0 * * 1"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '*.ini'
 
 concurrency:
   group: ${{ github.repository }}
@@ -34,7 +38,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref }}
 
       - name: Prepare
         uses: actions/setup-python@v5
