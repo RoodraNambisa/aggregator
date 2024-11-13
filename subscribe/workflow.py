@@ -62,7 +62,7 @@ class TaskConfig:
     chatgpt: dict = None
 
     # 是否检测节点存活状态
-    liveness: bool = False
+    liveness: bool = True
 
     # 是否强制开启 tls 及阻止跳过证书验证
     disable_insecure: bool = False
