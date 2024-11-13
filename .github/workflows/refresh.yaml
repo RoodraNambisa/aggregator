@@ -72,7 +72,7 @@ jobs:
         fi
 
     - name: Refresh
-      run: python -u subscribe/collect.py --all --refresh --overwrite --skip
+      run: python -u subscribe/collect.py --all --refresh --overwrite
 
     - name: Timestamp
       run: date
