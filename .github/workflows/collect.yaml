@@ -7,7 +7,7 @@ on:
   push:
     branches: [main]
     paths:
-      - '*.ini'
+      - '__init__.py'
 
 concurrency:
   group: ${{ github.repository }}
