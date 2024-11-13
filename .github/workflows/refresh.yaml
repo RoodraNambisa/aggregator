@@ -10,7 +10,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'refresh.yaml'
+      - '**/refresh.yaml'
 
 concurrency:
   group: ${{ github.repository }}
