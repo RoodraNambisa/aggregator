@@ -56,7 +56,7 @@ class TaskConfig:
 
     # 节点排除规则
     exclude: str = ""
-    include: str = ""
+    include: str = "集群"
 
     # ChatGPT连通性测试节点过滤规则
     chatgpt: dict = None
